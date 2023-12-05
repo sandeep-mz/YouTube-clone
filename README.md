@@ -43,4 +43,12 @@ The UI replicates the Figma design using HTML and CSS. Videos are rendered dynam
 - **Video List API Documentation:** [Video List API](https://developers.google.com/youtube/v3/docs/videos/list)
 
 
+# Contact✔️🔴
+
+If you have any questions or need further information about the project, you can contact the project owner at - @initialsandeep09@gmail.com.
+
+GITHUB LINK  https://github.com/sandeep-mz/YouTube-clone
+
+DEPLOYED LINK  https://sandeep-mz.github.io/YouTube-clone/
+
 
