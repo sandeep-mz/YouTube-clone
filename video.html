@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./video.css">
+    <link rel="shortcut icon" href="./Assets/Youtube-Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="shortcut icon" href="./Assets/Youtube-Logo.png" type="image/x-icon">
+    
+    <title>Youtube Clone</title>
+</head>
+<body>
+  <!-- loader spinner -->
+  <div class="custom-loader" id="custom-loader"></div>
+    <!-- nav bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-left" style="gap: 20px; ">
+                <span class="material-symbols-outlined" style="cursor: pointer;" onclick="showSideMenu()" class="toogler-icon-menu">menu</span>
+                <!-- <img src="./Assets/hamburger.png" alt="" onclick="showSideMenu()" class="toogler-icon-menu"> -->
+                <a class="" href="./index.html">
+                <img src="./Assest/Youtube-Logo-with text.png" alt="Youtube-Logo">
+              </a>
+            </div>
+
+            <div class="nav-center">
+                <form class="nav-form" role="search">
+                    <input type="search" placeholder="Search" id="Search">
+                    <button  type="submit" id="searchBtn">
+                        <span class="material-icons">search</span>
+                    </button>
+                    <!-- <span class="material-symbols-outlined"> video_camera_front </span> -->
+                  </form>
+            </div>
+
+            <div class="nav-right">   
+                <ul class="navbar-list">
+                  <li class="nav-item1">
+                    <a class="nav-link" aria-current="page" href="#">
+                        <span class="material-symbols-outlined o">video_camera_front </span>
+                    </a>
+                  </li>
+                  <li class="nav-item1">
+                    <a class="nav-link" href="#">
+                        <span class="material-symbols-outlined o">notifications</span>
+                    </a>
+                  </li>
+                  <li class="nav-item1">
+                    <a class="nav-link" href="#">
+                        <span class="material-symbols-outlined o" style="color: tomato;">account_circle</span>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <span class="material-symbols-outlined toogler-icon-menu" style="cursor: pointer;" onclick="showSideMenu()" class="toogler-icon-menu">menu</span>
+            <!-- <img src="./Assets/hamburger.png" alt="" class="toogler-icon-menu"> -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- video & channel details -->
+        <div id="videoPreviewSection">
+          
+          <div id="videoContainer"></div>
+          
+          <div id="video_channelDetails">
+            <h4 id="videoTitle">Blind Woodturner: Turning passion into fine art</h4>
+            <div id="videoDetails">
+              <span id="videoStats1">
+                <span id="viewsCount">576,969 views</span> .
+                <span id="videoDate">Oct 8, 2023</span>
+              </span>
+              <span id="videoStats2">
+                <span id="likes"> <i class="fa-regular fa-thumbs-up">1.7K</i> 
+                <span id="dislikes"><i class="fa-light fa-thumbs-down">632</i>
+                <span id="share"><i class="fa-light fa-share">SHARE</i>
+                <span id="save"><i class="fa-light fa-bookmark">SAVE</i>
+                <span id="more"><i class="fa-light fa-ellipsis-vertical"></i>>
+              </span>
+            </div>
+            <hr style="border: 1px solid grey;">
+
+            <div id="channelDetails">
+              <div id="channelThumbnailContainer">
+                <img src="./Assets/Screenshot (20).png" alt="channelThumbnail" id="channelThumbnail">
+              </div>
+              <div id="channelDetailsContainer">
+                <div id="channelIntro">
+                  <div>
+                    <h4 id="channelName">Code with Herry</h4>
+                    <p id="channelStats"><span>1.2 M subscriber</span></p>
+                  </div>
+                  <button class="Subscribe">Subscribe</button>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi beatae sunt quam esse autem officiis illum
+                  cumque incidunt accusamus! Possimus ipsum ad quod facere, laboriosam optio iste hic animi nihil?</p>
+              </div>
+            </div>
+
+          </div>
+          
+          <hr style="border: 2px solid grey;">
+         
+          <div id="commentSection">
+            <div id="commentDetails">
+              <div><span id="CommentsCount">286 Comments</span>
+                <span><img src="./Assets/Dropdown.png" alt="">   SORT BY</span></div>
+              <div class="addComment">
+                <div class="userImage"><img src="./Assets/1.png" alt="" class="userThumbnail"></div>
+                <div class="InputComment"><input type="text" placeholder="Add a public comment..." class="addCommentInput"></div>
+              </div>
+            </div>
+            <div id="AllComments">
+              <div class="addComment">
+                <div class="userImage"><img src="./Assets/1.png" alt="" class="userThumbnail"></div>
+                  <div class="InputComment">
+                    <p>User Name <span class="commentTime"> 8 hours Ago</span></p>
+                    <p>Wow, world is full of different skills</p>
+                    <div class="commentStats">
+                      <span class="material-symbols-outlined">thumb_up 455</span>
+                      <span class="material-symbols-outlined">thumb_down 45</span>
+                      <span>REPLY 132</span>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        
+        <!-- suggested video section -->
+        <div id="suggestedSection">
+            <div class="card1" >
+                <img src="./Assets/videoThumbnail.png" alt="videoThumbnail" id="videoThumbnail">
+                <div id="videoDetailsContainer">  
+                    <span  id="videoDuration">02:12</span>                    
+                    <div id="cardDetails">
+                        <h5 class="card-title" id="channelTitle">Lorem ipsum dolor sit, amet consec tem!</h5>
+                        <p class="card-subtitle" id="channelName">Lorem ipsum .</p>
+                        <p class="card-subtitle"><span>15K views</span> . <span>1 week ago</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- this cdn is defining YT class -->
+    <!-- this YT class needs a divID to render video player iframe-->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./video.js"></script>
+</body>
+</html>
