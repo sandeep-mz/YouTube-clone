@@ -49,6 +49,6 @@ If you have any questions or need further information about the project, you can
 
 GITHUB LINK  https://github.com/sandeep-mz/YouTube-clone
 
-DEPLOYED LINK  https://sandeep-mz.github.io/YouTube-clone/
+DEPLOYED LINK  https://youtube-three-lemon.vercel.app/
 
 
