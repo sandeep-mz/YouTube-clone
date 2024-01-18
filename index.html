@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube | YT-Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+</head>
+<body>
+    <nav>
+        <span id="menuIcon" class="material-icons">
+            menu
+        </span>
+        <img class="logo "
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/YouTube_dark_logo_2017.svg/1280px-YouTube_dark_logo_2017.svg.png"
+            alt="">
+        <div class="inputDiv">
+            <input id="searchInput" type="text" placeholder="Search">
+            <button class="searchBtn" id="searchButton"><span class="material-icons">
+                    search
+                </span></button>
+        </div>
+        <!-- this is for toggle button  -->
+        <div class="theme-toggle" >
+            <input type="checkbox" id="themetoggle" class="toggle-checkbox" >
+            <label for="themetoggle" class="toggle-label" style="border: 1px solid yellow;"></label>
+        </div>
+
+        <div class="ic">
+            <span class="material-icons">
+                video_call
+            </span>
+            <span class="material-icons">
+                notifications
+            </span>
+            <span class="material-icons" style="color: rgb(134, 157, 206);">
+                account_circle
+            </span>
+    
+            
+        </div>
+    </nav>
+    <div class="black" id="black"></div>
+    <section class="main" >
+        <div class="leftMenu" id="leftMenu">
+            <div class="home">
+                <span class="material-icons">
+                    home
+                </span>
+                <h4>Home</h4>
+            </div>
+            <div class="sub">
+                <span class="material-icons">
+                    subscriptions
+                </span>
+                <h4>Subscriptions</h4>
+            </div>
+            <div class="sub">
+                <span class="material-icons">
+                    play_circle
+                </span>
+                <h4>Shorts</h4>
+            </div>
+            <div class="line"></div>
+            <div class="sub">
+                <span class="material-icons">
+                    person
+                </span>
+                <h4>Your channel</h4>
+            </div>
+            <div class="sub">
+                <span class="material-icons">
+                    history
+                </span>
+                <h4>History</h4>
+            </div>
+            <div class="sub">
+                <span class="material-icons">
+                    smart_display
+                </span>
+                <h4>Your vidoes</h4>
+            </div>
+            <div class="sub">
+                <span class="material-icons">
+                    schedule
+                </span>
+                <h4>Watch later</h4>
+            </div>
+            <div class="sub">
+                <span class="material-icons">
+                    content_cut
+                </span>
+                <h4>Clips</h4>
+            </div>
+        </div>
+
+        <div id="videoContainerDiv">
+        </div>
+    </section>
+
+    
+    
+
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+    <script src="toggle.js"></script>
+</body>
+
+</html>
